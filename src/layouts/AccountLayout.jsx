@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import SettingsNavbar from "../features/account/SettingsNavbar";
+import SettingsNavbar from "features/user/components/SettingsNavbar";
 
 function AccountLayout() {
   return (
