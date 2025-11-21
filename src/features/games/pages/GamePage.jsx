@@ -1,68 +1,56 @@
 //Packages
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useParams } from "react-router-dom";
 //Components
-import HeroImage from "features/games/components/HeroImage";
-import Reviews from "features/games/components/Reviews";
+import Spinner from "components/Spinner";
 import AboutGame from "features/games/components/AboutGame";
 import GameList from "features/games/components/GameList";
+import HeroImage from "features/games/components/HeroImage";
+import Reviews from "features/games/components/Reviews";
 
 //Game Not Found
 import GameNotFound from "components/GameNotFound";
 
-const BASEURL = `http://localhost:8000`;
-const REVIEWURL = `http://localhost:4000`;
+//Hooks
+import { useGame, useReviews } from "../hooks";
 
 function GamePage() {
   const { id } = useParams();
-  const [gameData, setGameData] = useState(null);
-  const [isLoading, setIsLoading] = useState(true);
+
+  const {
+    data: gameData,
+    isLoading: loadingGame,
+    isError: gameError,
+    error: gameErrorObj,
+  } = useGame(id);
+
+  const {
+    data: reviews = [],
+    isLoading: loadingReviews,
+    isError: reviewsError,
+    error: reviewsErrorObj,
+  } = useReviews(id);
 
   const [currentPage, setCurrentPage] = useState(1);
-  const [reviews, setReviews] = useState([]);
-  const limit = 3;
 
-  const totalPages = Math.ceil(reviews.length / limit);
+  const limit = 5;
+
+  const totalPages = Math.ceil(reviews?.length / limit);
 
   const currentReviews = reviews.slice(
     (currentPage - 1) * limit,
     currentPage * limit
   );
+
   function handleAdd(newReview) {
-    setReviews((prev) => [...prev, newReview]);
+    // setReviews((prev) => [...prev, newReview]);
   }
 
-  useEffect(() => {
-    const fetchGame = async () => {
-      setIsLoading(true);
-      try {
-        const [gameRes, reviewRes] = await Promise.all([
-          fetch(`${BASEURL}/games/id/${id}`),
-          fetch(`${REVIEWURL}/reviews/game/${id}`),
-        ]);
+  if (loadingGame || loadingReviews) return <Spinner />;
 
-        const gameData = await gameRes.json();
-        const reviewData = await reviewRes.json();
-
-        setGameData(gameData);
-        setReviews(reviewData);
-      } catch (err) {
-        console.error(err);
-      } finally {
-        setIsLoading(false);
-      }
-    };
-
-    fetchGame();
-  }, [id]);
-
-  if (isLoading) {
-    return (
-      <div className="flex justify-center items-center w-full h-64 md:h-96 lg:h-[550px]">
-        <p className="text-gray-500">Loading...</p>
-      </div>
-    );
-  }
+  if (gameError) return <p>Error loading game: {gameErrorObj.message}</p>;
+  if (reviewsError)
+    return <p>Error loading reviews: {reviewsErrorObj.message}</p>;
 
   const screenshotsArray = (() => {
     try {

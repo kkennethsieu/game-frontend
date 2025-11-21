@@ -16,7 +16,6 @@ function Reviews({
   handleAdd,
 }) {
   const [isOpen, setIsOpen] = useState(false);
-
   return (
     <>
       <div className="space-y-8 p-6 md:p-8">
