@@ -1,4 +1,24 @@
+import { mockReviewsStore } from "./mockStore";
+
 export const createReview = async (data) => {
+  if (import.meta.env.VITE_USE_MOCKS === "true") {
+    const newReview = {
+      ...data,
+      gameId: String(data.gameId),
+      reviewId: Math.random(),
+      likesCount: { likes: 0, dislikes: 0 },
+      user: {
+        username: "You",
+        avatarURL: "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+        phoneNumber: null,
+        userBio: null,
+      },
+      createdAt: new Date().toISOString(),
+    };
+    mockReviewsStore.push(newReview);
+    return newReview;
+  }
+
   const response = await fetch(
     `${import.meta.env.VITE_REVIEW_API}/reviews/create`,
     {

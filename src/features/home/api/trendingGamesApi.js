@@ -1,7 +1,13 @@
+import trendingMock from "../mock/trendingGames.json";
 export const fetchTrendingGames = async () => {
+  if (import.meta.env.VITE_USE_MOCKS === "true") {
+    return trendingMock;
+  }
+
   const res = await fetch(
     `${import.meta.env.VITE_CATALOG_API}/games/lists/trending`
   );
   if (!res.ok) throw new Error("Failed to fetch trending games");
-  return res.json();
+  const data = await res.json();
+  return data.trendingGames;
 };

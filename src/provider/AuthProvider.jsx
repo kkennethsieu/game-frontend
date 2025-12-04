@@ -2,6 +2,7 @@
 import { createContext, useContext, useState, useEffect } from "react";
 
 const API_URL = import.meta.env.VITE_USER_API;
+const MOCKS = import.meta.env.VITE_USE_MOCKS === "true";
 
 const AuthContext = createContext();
 
@@ -59,6 +60,29 @@ export const AuthProvider = ({ children }) => {
       throw new Error("Invalid inputs");
     }
     try {
+      if (MOCKS) {
+        // Simulate network delay
+        await new Promise((resolve) => setTimeout(resolve, 500));
+
+        // Mock user data
+        const mockUser = {
+          userId: 19,
+          username: "test888",
+          email: "test888@example.com",
+          avatarURL: "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+        };
+
+        const mockAccessToken = "mock-access-token-12345";
+
+        // Validate mock credentials
+        if (username !== "test888" || password !== "test888") {
+          throw new Error("Invalid credentials");
+        }
+
+        saveAuth(mockAccessToken, mockUser);
+        return;
+      }
+
       const res = await fetch(`${API_URL}/auth/login`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -80,10 +104,12 @@ export const AuthProvider = ({ children }) => {
   // --- Logout ---
   const logout = async () => {
     try {
-      await fetch(`${API_URL}/auth/logout`, {
-        method: "POST",
-        credentials: "include",
-      });
+      if (!MOCKS) {
+        await fetch(`${API_URL}/auth/logout`, {
+          method: "POST",
+          credentials: "include",
+        });
+      }
     } catch (err) {
       console.warn("Logout request failed:", err);
     } finally {

@@ -2,6 +2,8 @@ import { useQueryClient, useMutation } from "@tanstack/react-query";
 import { updateReview } from "../api/updateReview";
 import toast from "react-hot-toast";
 
+const MOCKS = import.meta.env.VITE_USE_MOCKS;
+
 export const useUpdateReview = (userId) => {
   const queryClient = useQueryClient();
 
@@ -38,9 +40,11 @@ export const useUpdateReview = (userId) => {
       );
     },
     onSettled: () => {
-      queryClient.invalidateQueries({
-        queryKey: ["reviews-with-games", userId],
-      });
+      if (!MOCKS) {
+        queryClient.invalidateQueries({
+          queryKey: ["reviews-with-games", userId],
+        });
+      }
     },
   });
 };

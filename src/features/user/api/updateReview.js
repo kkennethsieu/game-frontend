@@ -1,4 +1,7 @@
 export const updateReview = async (data) => {
+  if (import.meta.env.VITE_USE_MOCKS) {
+    return;
+  }
   const response = await fetch(
     `${import.meta.env.VITE_REVIEW_API}/reviews/update/${data.reviewId}`,
     {

@@ -1,0 +1,57 @@
+[
+  {
+    "notificationId": 1,
+    "senderId": 20,
+    "senderAvatarURL": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+    "receiverId": 19,
+    "entityId": 5,
+    "type": "review_liked",
+    "message": "user123 liked your review on Cyberpunk 2077",
+    "isRead": 0,
+    "createdAt": "2025-12-04T08:15:00.000Z"
+  },
+  {
+    "notificationId": 2,
+    "senderId": 21,
+    "senderAvatarURL": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+    "receiverId": 19,
+    "entityId": 12,
+    "type": "review_disliked",
+    "message": "gamer_pro disliked your review on Elden Ring",
+    "isRead": 0,
+    "createdAt": "2025-12-04T09:30:00.000Z"
+  },
+  {
+    "notificationId": 3,
+    "senderId": 22,
+    "senderAvatarURL": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+    "receiverId": 19,
+    "entityId": 22,
+    "type": "friend_request",
+    "message": "alex_gamer sent you a friend request",
+    "isRead": 1,
+    "createdAt": "2025-12-04T10:45:00.000Z"
+  },
+  {
+    "notificationId": 4,
+    "senderId": 23,
+    "senderAvatarURL": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+    "receiverId": 19,
+    "entityId": 8,
+    "type": "review_liked",
+    "message": "game_master liked your review on Hades",
+    "isRead": 0,
+    "createdAt": "2025-12-04T11:20:00.000Z"
+  },
+  {
+    "notificationId": 5,
+    "senderId": 20,
+    "senderAvatarURL": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+    "receiverId": 19,
+    "entityId": 3,
+    "type": "review_liked",
+    "message": "user123 liked your review on The Witcher 3",
+    "isRead": 1,
+    "createdAt": "2025-12-04T12:05:00.000Z"
+  }
+]

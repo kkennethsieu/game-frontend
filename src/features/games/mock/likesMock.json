@@ -1,0 +1,16 @@
+[
+  {
+    "likeId": 1,
+    "userId": 20,
+    "reviewId": 13,
+    "isLike": 1,
+    "createdAt": "2025-12-03T10:30:00.000Z"
+  },
+  {
+    "likeId": 2,
+    "userId": 19,
+    "reviewId": 13,
+    "isLike": 0,
+    "createdAt": "2025-12-03T11:15:00.000Z"
+  }
+]

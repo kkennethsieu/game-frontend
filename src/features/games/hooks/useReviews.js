@@ -1,11 +1,12 @@
 import { useQuery } from "@tanstack/react-query";
 import { fetchReviewsWithUser } from "../api";
+const MOCKS = import.meta.env.VITE_USE_MOCKS === "true";
 
 export const useReviews = (gameId) => {
   return useQuery({
-    queryKey: ["reviews", gameId],
+    queryKey: ["reviews", String(gameId)],
     queryFn: () => fetchReviewsWithUser(gameId),
-    staleTime: 1000 * 60 * 60 * 24,
+    staleTime: MOCKS ? 0 : 1000 * 60 * 60 * 24,
     cacheTime: 1000 * 60 * 60 * 24,
     retry: 1,
     select: (data) => data,

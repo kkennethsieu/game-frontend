@@ -1,0 +1,257 @@
+[
+  {
+    "reviewId": 1,
+    "gameId": "730",
+    "reviewScore": 9,
+    "reviewTitle": "Amazing Gameplay",
+    "reviewBody": "Loved every moment of it!",
+    "category": "Highly Recommended",
+    "createdAt": "2025-12-03 12:00:00",
+    "likesCount": { "likes": 15, "dislikes": 16 },
+    "userId": 19,
+    "user": {
+      "username": "test888",
+      "avatarURL": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+      "phoneNumber": "8888888888",
+      "userBio": null
+    }
+  },
+  {
+    "reviewId": 2,
+    "gameId": "578080",
+    "reviewScore": 8,
+    "reviewTitle": "Great Experience",
+    "reviewBody": "Really enjoyed the graphics and story.",
+    "category": "Recommended",
+    "createdAt": "2025-12-03 12:05:00",
+    "likesCount": { "likes": 15, "dislikes": 16 },
+    "userId": 19,
+    "user": {
+      "username": "test888",
+      "avatarURL": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+      "phoneNumber": "8888888888",
+      "userBio": null
+    }
+  },
+  {
+    "reviewId": 3,
+    "gameId": "570",
+    "reviewScore": 7,
+    "reviewTitle": "Good Game",
+    "reviewBody": "Fun but could be better balanced.",
+    "category": "Recommended",
+    "createdAt": "2025-12-03 12:10:00",
+    "userId": 19,
+    "likesCount": { "likes": 15, "dislikes": 16 },
+    "user": {
+      "username": "test888",
+      "avatarURL": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+      "phoneNumber": "8888888888",
+      "userBio": null
+    }
+  },
+  {
+    "reviewId": 4,
+    "gameId": "271590",
+    "reviewScore": 9,
+    "reviewTitle": "Highly Recommend",
+    "reviewBody": "One of the best games I have played!",
+    "category": "Masterpiece",
+    "createdAt": "2025-12-03 12:15:00",
+    "likesCount": { "likes": 15, "dislikes": 16 },
+    "userId": 19,
+    "user": {
+      "username": "test888",
+      "avatarURL": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+      "phoneNumber": "8888888888",
+      "userBio": null
+    }
+  },
+  {
+    "reviewId": 5,
+    "gameId": "359550",
+    "reviewScore": 8,
+    "reviewTitle": "Solid Game",
+    "reviewBody": "Gameplay is smooth and enjoyable.",
+    "category": "Recommended",
+    "createdAt": "2025-12-03 12:20:00",
+    "likesCount": { "likes": 15, "dislikes": 16 },
+    "userId": 19,
+    "user": {
+      "username": "test888",
+      "avatarURL": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+      "phoneNumber": "8888888888",
+      "userBio": null
+    }
+  },
+  {
+    "reviewId": 6,
+    "gameId": "570",
+    "reviewScore": 7,
+    "reviewTitle": "Good Game",
+    "reviewBody": "Fun but could be better balanced.",
+    "category": "Recommended",
+    "createdAt": "2025-12-03 12:25:00",
+    "likesCount": { "likes": 15, "dislikes": 16 },
+    "userId": 19,
+    "user": {
+      "username": "test888",
+      "avatarURL": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+      "phoneNumber": "8888888888",
+      "userBio": null
+    }
+  },
+  {
+    "reviewId": 7,
+    "gameId": "271590",
+    "reviewScore": 9,
+    "reviewTitle": "Highly Recommend",
+    "reviewBody": "One of the best games I have played!",
+    "category": "Masterpiece",
+    "createdAt": "2025-12-03 12:30:00",
+    "likesCount": { "likes": 15, "dislikes": 16 },
+    "userId": 19,
+    "user": {
+      "username": "test888",
+      "avatarURL": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+      "phoneNumber": "8888888888",
+      "userBio": null
+    }
+  },
+  {
+    "reviewId": 8,
+    "gameId": "359550",
+    "reviewScore": 8,
+    "reviewTitle": "Solid Game",
+    "reviewBody": "Gameplay is smooth and enjoyable.",
+    "category": "Recommended",
+    "createdAt": "2025-12-03 12:35:00",
+    "likesCount": { "likes": 15, "dislikes": 16 },
+    "userId": 19,
+    "user": {
+      "username": "test888",
+      "avatarURL": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+      "phoneNumber": "8888888888",
+      "userBio": null
+    }
+  },
+  {
+    "reviewId": 9,
+    "gameId": "105600",
+    "reviewScore": 7,
+    "reviewTitle": "Nice Experience",
+    "reviewBody": "Enjoyable but short.",
+    "category": "Recommended",
+    "createdAt": "2025-12-03 12:40:00",
+    "likesCount": { "likes": 15, "dislikes": 16 },
+    "userId": 19,
+    "user": {
+      "username": "test888",
+      "avatarURL": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+      "phoneNumber": "8888888888",
+      "userBio": null
+    }
+  },
+  {
+    "reviewId": 10,
+    "gameId": "440",
+    "reviewScore": 8,
+    "reviewTitle": "Classic Game",
+    "reviewBody": "Brings back memories!",
+    "category": "Critically Acclaimed",
+    "createdAt": "2025-12-03 12:45:00",
+    "likesCount": { "likes": 15, "dislikes": 16 },
+    "userId": 19,
+    "user": {
+      "username": "test888",
+      "avatarURL": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+      "phoneNumber": "8888888888",
+      "userBio": null
+    }
+  },
+  {
+    "reviewId": 11,
+    "gameId": "4000",
+    "reviewScore": 9,
+    "reviewTitle": "Fantastic!",
+    "reviewBody": "Immersive and fun.",
+    "category": "Highly Recommended",
+    "createdAt": "2025-12-03 12:50:00",
+    "likesCount": { "likes": 15, "dislikes": 16 },
+    "userId": 19,
+    "user": {
+      "username": "test888",
+      "avatarURL": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+      "phoneNumber": "8888888888",
+      "userBio": null
+    }
+  },
+  {
+    "reviewId": 12,
+    "gameId": "252490",
+    "reviewScore": 8,
+    "reviewTitle": "Very Good",
+    "reviewBody": "Lots of replay value.",
+    "category": "Recommended",
+    "createdAt": "2025-12-03 12:55:00",
+    "likesCount": { "likes": 15, "dislikes": 16 },
+    "userId": 19,
+    "user": {
+      "username": "test888",
+      "avatarURL": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+      "phoneNumber": "8888888888",
+      "userBio": null
+    }
+  },
+  {
+    "reviewId": 13,
+    "gameId": "292030",
+    "reviewScore": 7,
+    "reviewTitle": "Pretty Good",
+    "reviewBody": "Not perfect but fun.",
+    "category": "Recommended",
+    "createdAt": "2025-12-03 13:00:00",
+    "likesCount": { "likes": 15, "dislikes": 16 },
+    "userId": 19,
+    "user": {
+      "username": "test888",
+      "avatarURL": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+      "phoneNumber": "8888888888",
+      "userBio": null
+    }
+  },
+  {
+    "reviewId": 14,
+    "gameId": "550",
+    "reviewScore": 8,
+    "reviewTitle": "Good Game",
+    "reviewBody": "Enjoyed playing with friends.",
+    "category": "Recommended",
+    "createdAt": "2025-12-03 13:05:00",
+    "likesCount": { "likes": 15, "dislikes": 16 },
+    "userId": 19,
+    "user": {
+      "username": "test888",
+      "avatarURL": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+      "phoneNumber": "8888888888",
+      "userBio": null
+    }
+  },
+  {
+    "reviewId": 15,
+    "gameId": "945360",
+    "reviewScore": 9,
+    "reviewTitle": "Awesome Game",
+    "reviewBody": "Highly addictive!",
+    "category": "Masterpiece",
+    "createdAt": "2025-12-03 13:10:00",
+    "likesCount": { "likes": 15, "dislikes": 16 },
+    "userId": 19,
+    "user": {
+      "username": "test888",
+      "avatarURL": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+      "phoneNumber": "8888888888",
+      "userBio": null
+    }
+  }
+]

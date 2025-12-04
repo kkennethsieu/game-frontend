@@ -1,22 +1,44 @@
+import { useNavigate } from "react-router-dom";
 import { useDislikeReview, useLikeReview } from "../hooks";
 import { useAuth } from "provider/AuthProvider";
 
 export default function ReviewCard({ review }) {
-  const { reviewScore, reviewBody, reviewTitle, createdAt, gameId, reviewId } =
-    review;
+  const {
+    reviewScore,
+    reviewBody,
+    reviewTitle,
+    createdAt,
+    gameId,
+    reviewId,
+    userId: authorId,
+  } = review;
   const { username, avatarURL } = review.user || {};
   const { likes, dislikes } = review.likesCount || {};
+  const nav = useNavigate();
 
   const { user } = useAuth();
-  const likeReview = useLikeReview(gameId, reviewId, user.userId);
-  const dislikeReview = useDislikeReview(gameId, reviewId, user.userId);
+  const likeReview = useLikeReview(gameId, reviewId, authorId, user?.userId);
+  const dislikeReview = useDislikeReview(
+    gameId,
+    reviewId,
+    authorId,
+    user?.userId
+  );
   const handleLike = () => {
-    likeReview.mutate();
-    console.log("liked");
+    if (user) {
+      likeReview.mutate();
+      console.log("liked");
+    } else {
+      nav("/login");
+    }
   };
   const handleDislike = () => {
-    dislikeReview.mutate();
-    console.log("liked");
+    if (user) {
+      dislikeReview.mutate();
+      console.log("disliked");
+    } else {
+      nav("/login");
+    }
   };
 
   return (

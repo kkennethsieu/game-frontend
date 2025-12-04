@@ -2,11 +2,11 @@ import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { createLikeReview, createDislikeReview } from "../api";
 import toast from "react-hot-toast";
 
-export const useLikeReview = (gameId, reviewId, userId) => {
+export const useLikeReview = (gameId, reviewId, authorId, userId) => {
   const queryClient = useQueryClient();
 
   return useMutation({
-    mutationFn: () => createLikeReview(userId, reviewId), // your API function
+    mutationFn: () => createLikeReview(userId, reviewId, authorId), // your API function
 
     onError: (err, newReview, context) => {
       // Rollback to previous state if API call fails
@@ -20,11 +20,11 @@ export const useLikeReview = (gameId, reviewId, userId) => {
   });
 };
 
-export const useDislikeReview = (gameId, reviewId, userId) => {
+export const useDislikeReview = (gameId, reviewId, authorId, userId) => {
   const queryClient = useQueryClient();
 
   return useMutation({
-    mutationFn: () => createDislikeReview(userId, reviewId), // your API function
+    mutationFn: () => createDislikeReview(userId, reviewId, authorId), // your API function
     onError: (err, newReview, context) => {
       // Rollback to previous state if API call fails
       toast.error("Failed to add review");

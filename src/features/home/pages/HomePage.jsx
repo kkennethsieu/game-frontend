@@ -1,5 +1,5 @@
 // Images
-import BgImage from "assets/sonicHero.webp";
+import BgImage from "assets/sonicHero.jpeg";
 import HeroImage from "features/home/components/HeroImage";
 
 //Component

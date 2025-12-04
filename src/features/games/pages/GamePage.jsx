@@ -48,13 +48,15 @@ function GamePage() {
   if (reviewsError)
     return <p>Error loading reviews: {reviewsErrorObj.message}</p>;
 
-  const screenshotsArray = (() => {
-    try {
-      return JSON.parse(gameData?.screenshots || "[]");
-    } catch {
-      return [];
-    }
-  })();
+  const screenshotsArray = Array.isArray(gameData?.screenshots)
+    ? gameData.screenshots // already an array
+    : (() => {
+        try {
+          return JSON.parse(gameData?.screenshots || "[]"); // string -> array
+        } catch {
+          return [];
+        }
+      })();
 
   return (
     <div>

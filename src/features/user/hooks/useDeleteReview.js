@@ -2,6 +2,9 @@ import { useQueryClient, useMutation } from "@tanstack/react-query";
 import { deleteReview } from "../api/deleteReview";
 import toast from "react-hot-toast";
 
+//If using mock data
+const MOCKS = import.meta.env.VITE_USE_MOCKS;
+
 export const useDeleteReview = (userId) => {
   const queryClient = useQueryClient();
   return useMutation({
@@ -26,9 +29,11 @@ export const useDeleteReview = (userId) => {
       toast.success("Review deleted successfully");
     },
     onSettled: () => {
-      queryClient.invalidateQueries({
-        queryKey: ["reviews-with-games", userId],
-      });
+      if (!MOCKS) {
+        queryClient.invalidateQueries({
+          queryKey: ["reviews-with-games", userId],
+        });
+      }
     },
     onError: (err, reviewId, context) => {
       toast.error("Failed to delete review");

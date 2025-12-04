@@ -6,7 +6,6 @@ const GameCard = ({ game }) => {
     ? JSON.parse(genres)
     : [];
 
-  console.log(game);
   return (
     <div className="bg-white shadow-md hover:shadow-xl p-3 border border-gray-200 rounded-xl transition cursor-pointer">
       <img

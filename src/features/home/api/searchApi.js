@@ -1,4 +1,13 @@
+import searchedMock from "../mock/searched";
+
 export const fetchSearchGames = async (searchTerm) => {
+  if (import.meta.env.VITE_USE_MOCKS === "true") {
+    // filter mock data by search term
+    return searchedMock.filter((game) =>
+      game.title.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+  }
+
   if (!searchTerm) return [];
   const res = await fetch(
     `${import.meta.env.VITE_CATALOG_API}/games/search/${searchTerm}`

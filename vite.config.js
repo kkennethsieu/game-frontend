@@ -20,4 +20,16 @@ export default defineConfig({
       provider: path.resolve(__dirname, "src/provider"),
     },
   },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          // Vendor chunks
+          "react-vendor": ["react", "react-dom", "react-router-dom"],
+          "query-vendor": ["@tanstack/react-query"],
+          "ui-vendor": ["react-hot-toast"],
+        },
+      },
+    },
+  },
 });

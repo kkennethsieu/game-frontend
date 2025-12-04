@@ -6,10 +6,14 @@ import { Icon } from "@iconify/react";
 //Components
 import Button from "components/Button";
 //Provider
-import { useAuth } from "../../../provider/AuthProvider";
+import { useAuth } from "provider/AuthProvider";
+const USE_MOCKS = import.meta.env.VITE_USE_MOCKS === "true";
 
 function LoginPage() {
-  const [form, setForm] = useState({ username: "", password: "" });
+  const [form, setForm] = useState({
+    username: `${USE_MOCKS ? "test888" : ""}`,
+    password: `${USE_MOCKS ? "test888" : ""}`,
+  });
   const [showPassword, setShowPassword] = useState(false);
   const { login } = useAuth();
   const nav = useNavigate();

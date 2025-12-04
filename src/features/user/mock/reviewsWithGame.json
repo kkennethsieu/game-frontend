@@ -1,0 +1,148 @@
+[
+  {
+    "reviewId": 1,
+    "gameId": "730",
+    "reviewScore": 9,
+    "reviewTitle": "Amazing Gameplay",
+    "reviewBody": "Loved every moment of it!",
+    "category": "Highly Recommended",
+    "createdAt": "2025-12-03 12:00:00",
+    "userId": 19,
+    "game": {
+      "id": 730,
+      "title": "Counter-Strike: Global Offensive",
+      "description": "Counter-Strike: Global Offensive (CS: GO) expands upon the team-based action gameplay that it pioneered when it was launched 19 years ago. CS: GO features new maps, characters, weapons, and game modes, and delivers updated versions of the classic CS content (de_dust2, etc.). 'Counter-Strike took the gaming industry by surprise when the unlikely MOD became the most played online PC action game in the world almost immediately after its release in August 1999,' said Doug Lombardi at Valve. 'For the past 12 years, it has continued to be one of the most-played games in the world, headline competitive gaming tournaments and selling over 25 million units worldwide across the franchise. CS: GO promises to expand on CS' award-winning gameplay and deliver it to gamers on the PC as well as the next gen consoles and the Mac.'",
+      "releaseYear": 2012,
+      "imageUrl": "https://cdn.akamai.steamstatic.com/steam/apps/730/header.jpg?t=1641233427",
+      "developer": "Valve, Hidden Path Entertainment",
+      "publisher": "Valve",
+      "platform": ["Windows", "Mac", "Linux"],
+      "price": 0.0,
+      "website": "http://blog.counter-strike.net/",
+      "genres": ["Action", "Free to Play"],
+      "tags": [
+        "FPS",
+        "Shooter",
+        "Multiplayer",
+        "Competitive",
+        "Action",
+        "Team-Based",
+        "e-sports",
+        "Tactical",
+        "First-Person",
+        "PvP"
+      ],
+      "screenshots": [
+        "https://cdn.akamai.steamstatic.com/steam/apps/730/ss_118cb022b9a43f70d2e5a2df7427f29088b6b191.1920x1080.jpg?t=1641233427",
+        "https://cdn.akamai.steamstatic.com/steam/apps/730/ss_d196d945c6170e9cadaf67a6dea675bd5fa7a046.1920x1080.jpg?t=1641233427",
+        "https://cdn.akamai.steamstatic.com/steam/apps/730/ss_8c9cce9a9dde7b9c020837dcbd4615efe6f77d66.1920x1080.jpg?t=1641233427",
+        "https://cdn.akamai.steamstatic.com/steam/apps/730/ss_2b9e362287b509bb3864fa7bad654fe1fda0f7ed.1920x1080.jpg?t=1641233427",
+        "https://cdn.akamai.steamstatic.com/steam/apps/730/ss_855c016cde14b7cec5c3d2523589b9054c030010.1920x1080.jpg?t=1641233427",
+        "https://cdn.akamai.steamstatic.com/steam/apps/730/ss_34090867f1a02b6c17652ba9043e3f622ed985a9.1920x1080.jpg?t=1641233427",
+        "https://cdn.akamai.steamstatic.com/steam/apps/730/ss_77215ea1b454c08a75351a74585a5b089142da3e.1920x1080.jpg?t=1641233427",
+        "https://cdn.akamai.steamstatic.com/steam/apps/730/ss_110be563b66dde31b3b00dcf7d2f644c50374f07.1920x1080.jpg?t=1641233427"
+      ],
+      "metacriticScore": 83,
+      "steamRating": 88
+    }
+  },
+  {
+    "reviewId": 2,
+    "gameId": "578080",
+    "reviewScore": 8,
+    "reviewTitle": "Great Experience",
+    "reviewBody": "Really enjoyed the graphics and story.",
+    "category": "Recommended",
+    "createdAt": "2025-12-03 12:05:00",
+    "userId": 19,
+    "game": {
+      "id": 578080,
+      "title": "PUBG: BATTLEGROUNDS",
+      "description": "LAND, LOOT, SURVIVE! Play PUBG: BATTLEGROUNDS for free. Land on strategic locations, loot weapons and supplies, and survive to become the last team standing across various, diverse Battlegrounds. Squad up and join the Battlegrounds for the original Battle Royale experience that only PUBG: BATTLEGROUNDS can offer. This content download will also provide access to the BATTLEGROUNDS Test Server, which requires a separate download to play. Optional in-game purchases available.",
+      "releaseYear": 2017,
+      "imageUrl": "https://cdn.akamai.steamstatic.com/steam/apps/578080/header.jpg?t=1658287469",
+      "developer": "KRAFTON, Inc.",
+      "publisher": "KRAFTON, Inc.",
+      "platform": ["Windows"],
+      "price": 0.0,
+      "website": "http://www.pubg.com",
+      "genres": [
+        "Action",
+        "Adventure",
+        "Free to Play",
+        "Massively Multiplayer"
+      ],
+      "tags": [
+        "Survival",
+        "Shooter",
+        "Multiplayer",
+        "Battle Royale",
+        "FPS",
+        "PvP",
+        "Third-Person Shooter",
+        "Action",
+        "Online Co-Op",
+        "Tactical"
+      ],
+      "screenshots": [
+        "https://cdn.akamai.steamstatic.com/steam/apps/578080/ss_e2cbfefdff39b9cb8e080da8f30cc07223b041b9.1920x1080.jpg?t=1658287469",
+        "https://cdn.akamai.steamstatic.com/steam/apps/578080/ss_01d84950ddfb28ea611f1fa1a28c3cb08ccd7eee.1920x1080.jpg?t=1658287469",
+        "https://cdn.akamai.steamstatic.com/steam/apps/578080/ss_606cee13e97530720c678513cb1138ef9854d7d5.1920x1080.jpg?t=1658287469",
+        "https://cdn.akamai.steamstatic.com/steam/apps/578080/ss_4454f310776c626a76baeca2d05fd82bd17c6ee0.1920x1080.jpg?t=1658287469",
+        "https://cdn.akamai.steamstatic.com/steam/apps/578080/ss_e34bcd20c7e3f5244c17b5af5d192b2149e11d33.1920x1080.jpg?t=1658287469",
+        "https://cdn.akamai.steamstatic.com/steam/apps/578080/ss_0985fff929498a15793fc3df766607fb54bf5338.1920x1080.jpg?t=1658287469",
+        "https://cdn.akamai.steamstatic.com/steam/apps/578080/ss_2db6a7b87ad61fbee74adcd2d7b03eee1a28743e.1920x1080.jpg?t=1658287469",
+        "https://cdn.akamai.steamstatic.com/steam/apps/578080/ss_93e6e1fa807c3b3b09ce4e1e4800e7723dc308a1.1920x1080.jpg?t=1658287469"
+      ],
+      "metacriticScore": null,
+      "steamRating": 56
+    }
+  },
+  {
+    "reviewId": 3,
+    "gameId": "570",
+    "reviewScore": 7,
+    "reviewTitle": "Good Game",
+    "reviewBody": "Fun but could be better balanced.",
+    "category": "Recommended",
+    "createdAt": "2025-12-03 12:10:00",
+    "userId": 19,
+    "game": {
+      "id": 570,
+      "title": "Dota 2",
+      "description": "The most-played game on Steam. Every day, millions of players worldwide enter battle as one of over a hundred Dota heroes. No matter if it's their 10th hour of play or 1,000th, there's always something new to discover. With regular updates that ensure a constant evolution of gameplay, features, and heroes, Dota 2 has truly taken on a life of its own. One Battlefield. Infinite Possibilities. When it comes to diversity of heroes, abilities, and powerful items, no two games are the same. Any hero can fill multiple roles, and there is an abundance of items to help meet the needs of each game. Dota doesn't provide limitations on how to play, it empowers you to express your own style. All heroes are free. Competitive balance is Dota's crown jewel. Bring your friends and party up. Learn the ropes playing co-op vs. bots. Sharpen your skills in the hero demo mode. Jump into the behavior- and skill-based matchmaking system that ensures you'll be matched with the right players each game.",
+      "releaseYear": 2013,
+      "imageUrl": "https://cdn.akamai.steamstatic.com/steam/apps/570/header.jpg?t=1658774750",
+      "developer": "Valve",
+      "publisher": "Valve",
+      "platform": ["Windows", "Mac", "Linux"],
+      "price": 0.0,
+      "website": "http://www.dota2.com/",
+      "genres": ["Action", "Free to Play", "Strategy"],
+      "tags": [
+        "Free to Play",
+        "MOBA",
+        "Multiplayer",
+        "Strategy",
+        "e-sports",
+        "Team-Based",
+        "Competitive",
+        "Action",
+        "Online Co-Op",
+        "PvP"
+      ],
+      "screenshots": [
+        "https://cdn.akamai.steamstatic.com/steam/apps/570/ss_ad8eee787704745ccdecdfde3a5cd2733704898d.1920x1080.jpg?t=1658774750",
+        "https://cdn.akamai.steamstatic.com/steam/apps/570/ss_7ab506679d42bfc0c0e40639887176494e0466d9.1920x1080.jpg?t=1658774750",
+        "https://cdn.akamai.steamstatic.com/steam/apps/570/ss_c9118375a2400278590f29a3537769c986ef6e39.1920x1080.jpg?t=1658774750",
+        "https://cdn.akamai.steamstatic.com/steam/apps/570/ss_f9ebafedaf2d5cfb80ef1f74baa18eb08cad6494.1920x1080.jpg?t=1658774750",
+        "https://cdn.akamai.steamstatic.com/steam/apps/570/ss_27b6345f22243bd6b885cc64c5cda74e4bd9c3e8.1920x1080.jpg?t=1658774750",
+        "https://cdn.akamai.steamstatic.com/steam/apps/570/ss_b33a65678dc71cc98df4890e22a89601ee56a918.1920x1080.jpg?t=1658774750",
+        "https://cdn.akamai.steamstatic.com/steam/apps/570/ss_d0f973ce376ca5b6c08e081cb035e86ced105fa9.1920x1080.jpg?t=1658774750",
+        "https://cdn.akamai.steamstatic.com/steam/apps/570/ss_1f3b5f5ccf8b159294914c3fe028128a787304b6.1920x1080.jpg?t=1658774750"
+      ],
+      "metacriticScore": 90,
+      "steamRating": 83
+    }
+  }
+]
